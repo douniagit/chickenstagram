@@ -7,7 +7,21 @@
 	width:30px;
 	height:30px;
 }
-
+*{
+	font-family:proxima-nova,Helvetica Neue,Arial,Helvetica,sans-serif;
+}
+.butt{
+	border-radius:3px;
+	border-style: solid;
+	border-width: 1px;
+	font-weight: 600;
+}
+.list{
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	list-style: none;
+}
 /*---------------------Body----------------------*/
 body{
 	margin:0;
@@ -36,11 +50,12 @@ input{
 }
 .logo{
 	width:40%;
-	height:10vh;
+	height:5vh;
 }
 .place{
 	padding:0;
 	width:33%;
+	padding-top:30%;
 }
 .place a{
 	padding-right: 5%;
@@ -56,10 +71,14 @@ input{
 	justify-content: space-around;
 }
 .profil{
+	margin-top:70px;
+	display:flex;
+	justify-content: space-around;
 	flex-flow: row wrap;
 	border:2px solid black;
-	width:70%;
+	width:90%;
 }
+
 .avatar{
 	width:150px;
 	height:150px;
@@ -68,10 +87,36 @@ input{
 	background-image:url("http://static.teteamodeler.com/boiteaoutils/image/image21/poussin3-0.jpg");
 	background-position:center;
 }
-h2{
-	margin:0;
-	text-decoration-style: none;
+.info{
+	min-width: 42%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 2px solid black;
 }
+.name{
+	margin:0;
+	font-size:34px;
+}
+
+.ab{
+	width:115px;
+	height:30px;
+	background-color: #70C050;
+	color:#FFFFFF;
+	font-size:15px;
+}
+.ab2{
+	width:30px;
+	height:30px;
+	background-color:#4E9F2E;
+}
+.ab3{
+	width:30px;
+	height:30px;
+	background-color:transparent;
+}
+
 /*-----------------corps pictures-----------------*/
 .content{
 	display:flex;
@@ -82,16 +127,16 @@ h2{
 	width:300px;
 	height:300px;
 	margin:auto;
-	padding-bottom: 30px;
+	padding-bottom:30px;
 }
 /*--------------------Footer----------------------*/
-.nav ul{
-	width:300px;
-	display:flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	list-style: none;
+.nav .list{
+	width:330px;
 	padding-left:0;
+}
+.list li a{
+	text-decoration: none;
+	color:black;
 }
 p{
 	text-align:center;
