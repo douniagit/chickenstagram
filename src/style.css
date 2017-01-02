@@ -2,28 +2,47 @@ body{
 	margin:0;
 	background-color: #FAFAFA;
 }
-.x{
+.icon{
 	width:30px;
 	height:30px;
 }
+.place{
+	display:flex;
+	/*border:2px solid black;*/
+	justify-content: center;
+	padding-top: 25%;
+}
+.place a{
+	padding-right: 15%;
+}
 .container{
 	margin:auto;
-	width:1000px;
+	width:80%;
 	height:auto;
 	display:flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
+}
+.profil{
+	/*border:2px solid black;*/
+}
+.content{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 h2{
 	margin:0;
+	text-decoration-style: none;
 }
 header{
 	width:100%;
 	height:70px;
+	border-bottom:1px solid lightgrey;
 	background-color: white;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 input{
 	width:215px;
@@ -35,14 +54,15 @@ input{
     background: #FAFAFA url(img/bird-prints.png) 60px no-repeat;
     background-size: 10px;
 }
-.y{
+.pics{
 	width:300px;
 	height:300px;
 	margin:auto;
 	padding-bottom: 30px;
 }
 .nav{
-	margin:auto;
+	display:flex;
+	justify-content: center;
 }
 .nav ul{
 	width:300px;
@@ -50,22 +70,24 @@ input{
 	flex-flow: row wrap;
 	justify-content: space-around;
 	list-style: none;
+	padding-left:0;
 }
 p{
 	text-align:center;
 }
 
+/***********Media Queries**********************/
+
 @media screen and (max-width: 600px) {
     .container {
         display: flex;
         flex-direction: column;
+        width:100%;
     }
-    .y {
-      
-    }
+    .container img {
+        /*width: 100%;*/
 }
-
-
+}
 
 
 
