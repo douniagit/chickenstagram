@@ -48,9 +48,20 @@
 	<div class="modal" id="chicken">
 		<div class="modal-container">
 			<img class="pic-modal" src="http://blog.tricofolk.info/wp-content/uploads/2011/12/poulette25.jpg"/>
-			<div>
-				<a href="#modal-close">close</a>
-				
+			<div class="comment">
+				<div id="like">
+					<img class="like1 like" onclick="activLike()" src="img/bird-print2.png"/>
+					<img class="like2 like" onclick="activLike()"src="img/bird-print1.png"/>
+				</div>
+					<input id="write" type="text" name="commentaires" placeholder="Ajouter un commentaire">
+						<ul>
+							<li><span><strong>Ginger</strong></span>  Waaaa tes plumes sont trop bright!!!</li>
+							<li><span><strong>HumainBeing</strong></span>  humm...KFC...</li>
+						</ul>
+					</div>
+				<div>
+					<a href="#modal-close">close</a>
+				</div>
 			</div>
 		</div>
 	</div>	
@@ -232,6 +243,9 @@
 			</div>
 			<p>2016 Henstagram</p>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
