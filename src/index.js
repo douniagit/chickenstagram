@@ -7,13 +7,12 @@ $("input[type='text'").keypress(function(event){
 	}
 });
 
-function activLike(Allo) {
+function activLike(lk) {
 
-  if (Allo.className == "like1") {
-    Allo.className = "like2"
+  if (lk.className == "like1") {
+    lk.className = "like2"
   }
-  else if (Allo.className == "like2") {
-    Allo.className = "like1"
+  else if (lk.className == "like2") {
+    lk.className = "like1"
   }
 }
-activLike();
